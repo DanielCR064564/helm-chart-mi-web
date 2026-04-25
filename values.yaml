@@ -1,9 +1,9 @@
-replicaCount: 4
+replicaCount: 2
 
 image:
   repository: nginx
   pullPolicy: IfNotPresent
-  tag: "1.27"
+  tag: "latest"
 
 imagePullSecrets: []
 
