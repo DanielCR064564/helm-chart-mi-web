@@ -17,7 +17,6 @@ serviceAccount:
   name: ""
 
 podAnnotations: {}
-
 podLabels: {}
 
 podSecurityContext: {}
@@ -38,6 +37,16 @@ ingress:
         - path: /
           pathType: Prefix
   tls: []
+
+httpRoute:
+  enabled: false
+  annotations: {}
+  hostnames: []
+  parentRefs: []
+  matches:
+    - path:
+        type: PathPrefix
+        value: /
 
 resources: {}
 
